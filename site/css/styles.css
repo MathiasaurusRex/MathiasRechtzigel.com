@@ -20,11 +20,42 @@ Site Colors
 #F2E85C = yellow
 #F53D54 = red
 #404040 = black / grey
-#ffffff = white
+#ffffff = white */
 
-Table o' Contents:*/
+/* 12-column responsive grid */
+
+.row {
+    clear: both;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+[class^="col-"] {
+    float: left;
+    margin: 0 3.84615384615% 0 0;
+    list-style: none;
+    position: relative;
+}
+
+[class^="col-"]:last-child {
+    margin: 0;
+}
+
+.col-1 { width: 4.8076923077% }
+.col-2 { width: 13.4615384615% }
+.col-3 { width: 22.1153846154% }
+.col-4 { width: 30.7692307692% }
+.col-5 { width: 39.4230769231% }
+.col-6 { width: 48.0769230769% }
+.col-7 { width: 56.7307692308% }
+.col-8 { width: 65.3846153846% }
+.col-9 { width: 74.0384615385% }
+.col-10 { width: 82.6923076923% }
+.col-11 { width: 91.3461538462% }
+.col-12 { width: 100%; margin: 0 }
 
 body{background-color:#00A19A;}
+
 /*.siteContainer{
 	width:60em;
 	margin: 0 auto;}
@@ -43,9 +74,12 @@ p, ul{
 .profilePicture{
 	margin:0 auto;
 	background-image: url(../image/avatar.png);
-	width: 200px;
-	height: 200px;
-	border-radius: 100px;}
+	width: 190px;
+	height: 190px;
+	border-radius: 110px;
+	border: 5px solid white;}
+
+.divide{height:1px;width:400px;}
 
 /* Main Copy */
 .copyContainer{text-align: center;}
