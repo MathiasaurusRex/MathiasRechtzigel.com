@@ -71,6 +71,8 @@ p, ul{
 
 /* Tagline */
 .mainTagLine{text-align: center;}
+.mainTagLine h1{font-size: 5em;}
+.mainTagLine h2{font-size: 2em;}
 .profilePicture{
 	margin:0 auto;
 	background-image: url(../image/avatar.png);
