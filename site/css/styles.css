@@ -30,6 +30,12 @@ Site Colors
     margin: 0 auto;
 }
 
+.row-half {
+    clear: both;
+    max-width: 450px;
+    margin: 0 auto;
+}
+
 [class^="col-"] {
     float: left;
     margin: 0 3.84615384615% 0 0;
@@ -67,7 +73,8 @@ h1, h2, h3{
 }
 p, ul{
 	font-family: 'Domine', serif;
-	color:#ffffff;}
+	color:#ffffff;
+}
 
 /* Tagline */
 .mainTagLine{text-align: center;}
@@ -75,17 +82,44 @@ p, ul{
 .mainTagLine h2{font-size: 2em;}
 .profilePicture{
 	margin:0 auto;
-	background-image: url(../image/avatar.png);
+	background-image: url(../image/markup.png);
 	width: 190px;
 	height: 190px;
 	border-radius: 110px;
-	border: 5px solid white;}
+	border: 5px solid white;
+	overflow:hidden;
+}
 
-.divide{height:1px;width:400px;}
+.divide{height:1px;width:400px;
+}
 
 /* Main Copy */
 .copyContainer{text-align: center;}
 
+/* List */
+
 /* Social Icons */
 .connect{text-align: center;}
+.social{
+	display: block;
+	list-style: none;}
+
+.social li{
+	display:inline-block;}
+.social li a {
+	opacity:1;
+	clear:both;
+	-webkit-transition: opacity .5s;
+	-moz-transition: opacity .5s;
+	-o-transition: opacity .5s;
+	transition: opacity .5s;
+}
+
+.social li a:hover{
+	opacity: .5;
+	-webkit-transition: opacity .5s;
+	-moz-transition: opacity .5s;
+	-o-transition: opacity .5s;
+	transition: opacity .5s;}
+
 
