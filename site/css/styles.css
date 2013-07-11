@@ -6,7 +6,7 @@ ___  ___        _    _      _
 | |\/| | / _` || __|| '_ \ | | / _` |/ __|
 | |  | || (_| || |_ | | | || || (_| |\__ \
 \_|  |_/ \__,_| \__||_| |_||_| \__,_||___/
-                                                         
+www.mathiasrechtzigel.com                                                         
 */
 
 /* Nukes margins and padding. For everything. Scary. */
@@ -28,21 +28,18 @@ Site Colors
     clear: both;
     max-width: 900px;
     margin: 0 auto;
-    padding: 0 2em; /* gives the row's decent paddings on smaller screens.*/
 }
 
 .row-half {
     clear: both;
     max-width: 450px;
     margin: 0 auto;
-    padding: 0 2em; /* gives the row's decent paddings on smaller screens.*/
 }
 
 .row-twothirds {
     clear: both;
     max-width: 600px;
     margin: 0 auto;
-    padding: 0 2em; /* gives the row's decent paddings on smaller screens.*/
 }
 
 
@@ -57,6 +54,12 @@ Site Colors
     margin: 0;
 }
 
+@media (max-width:408px){
+	.col-6{
+		width:100%!important; 
+		margin:0;}
+}
+
 .col-1 { width: 4.8076923077% }
 .col-2 { width: 13.4615384615% }
 .col-3 { width: 22.1153846154% }
@@ -69,6 +72,8 @@ Site Colors
 .col-10 { width: 82.6923076923% }
 .col-11 { width: 91.3461538462% }
 .col-12 { width: 100%; margin: 0 }
+
+.extraPad{padding: 0 1em; /* gives the row's decent paddings on smaller screens.*/}
 
 /* Body */
 
