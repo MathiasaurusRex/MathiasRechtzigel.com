@@ -62,8 +62,10 @@ Site Colors
 @media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
 	.col-6{
 		width:100%!important; 
-		margin:0;}
+		margin:0;
 	}
+}
+
 
 .col-1 { width: 4.8076923077% }
 .col-2 { width: 13.4615384615% }
