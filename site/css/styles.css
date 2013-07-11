@@ -28,13 +28,23 @@ Site Colors
     clear: both;
     max-width: 900px;
     margin: 0 auto;
+    padding: 0 2em; /* gives the row's decent paddings on smaller screens.*/
 }
 
 .row-half {
     clear: both;
     max-width: 450px;
     margin: 0 auto;
+    padding: 0 2em; /* gives the row's decent paddings on smaller screens.*/
 }
+
+.row-twothirds {
+    clear: both;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 2em; /* gives the row's decent paddings on smaller screens.*/
+}
+
 
 [class^="col-"] {
     float: left;
@@ -60,11 +70,12 @@ Site Colors
 .col-11 { width: 91.3461538462% }
 .col-12 { width: 100%; margin: 0 }
 
-body{background-color:#00A19A;}
+body{
+	background-color:#00A19A;
+	font-size: 16px;}
 
-/*.siteContainer{
-	width:60em;
-	margin: 0 auto;}
+.siteContainer{
+	padding: 1em 0;}
 
 /* Typography */
 h1, h2, h3{
@@ -76,10 +87,14 @@ p, ul{
 	color:#ffffff;
 }
 
+
 /* Tagline */
-.mainTagLine{text-align: center;}
+.mainTagLine{
+	text-align: center;
+	padding:1em 0;}
 .mainTagLine h1{font-size: 5em;}
 .mainTagLine h2{font-size: 2em;}
+.avatarContainer{padding: 1em 0;}
 .profilePicture{
 	margin:0 auto;
 	background-image: url(../image/markup.png);
@@ -95,17 +110,31 @@ p, ul{
 
 /* Main Copy */
 .copyContainer{text-align: center;}
+.copyContainer p{padding:.5em 0;}
 
 /* List */
+section{
+	padding:.5em 0;
+}
+
+section ul{
+	padding:.5em 0;
+}
+
+section ul li{
+	line-height: 1.3em;
+}
 
 /* Social Icons */
-.connect{text-align: center;}
+.connect{
+	text-align: center;}
 .social{
 	display: block;
 	list-style: none;}
 
 .social li{
-	display:inline-block;}
+	display:inline-block;
+	padding:1em .5em}
 .social li a {
 	opacity:1;
 	clear:both;
