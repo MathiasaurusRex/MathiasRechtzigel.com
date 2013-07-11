@@ -12,6 +12,11 @@ www.mathiasrechtzigel.com
 /* Nukes margins and padding. For everything. Scary. */
 * {margin: 0; padding: 0;}
 ul{list-style-type: none;}
+body{
+	background-color:#00A19A;
+	font-size: 16px;
+	-webkit-text-size-adjust: none;
+}
 
 /* 
 Site Colors
@@ -54,11 +59,11 @@ Site Colors
     margin: 0;
 }
 
-@media (max-width:408px){
+@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
 	.col-6{
 		width:100%!important; 
 		margin:0;}
-}
+	}
 
 .col-1 { width: 4.8076923077% }
 .col-2 { width: 13.4615384615% }
@@ -76,10 +81,6 @@ Site Colors
 .extraPad{padding: 0 1em; /* gives the row's decent paddings on smaller screens.*/}
 
 /* Body */
-
-body{
-	background-color:#00A19A;
-	font-size: 16px;}
 
 .siteContainer{
 	padding: 1em 0;}
@@ -148,6 +149,7 @@ section ul{
 
 section ul li{
 	line-height: 1.3em;
+	font-size: 1em;
 }
 
 /* Social Icons */
