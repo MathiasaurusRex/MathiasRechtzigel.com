@@ -70,6 +70,8 @@ Site Colors
 .col-11 { width: 91.3461538462% }
 .col-12 { width: 100%; margin: 0 }
 
+/* Body */
+
 body{
 	background-color:#00A19A;
 	font-size: 16px;}
@@ -87,6 +89,24 @@ p, ul{
 	color:#ffffff;
 }
 
+a {
+	color:#F2E85C;
+	opacity:1;
+	text-decoration: none;
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	-o-transition: all .5s;
+	transition: all .5s;
+}
+
+a:hover{
+	color:#ffffff;
+	opacity:.5;
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	-o-transition: all .5s;
+	transition: all .5s;
+}
 
 /* Tagline */
 .mainTagLine{
