@@ -60,10 +60,20 @@ Site Colors
 }
 
 @media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+	.siteContainer{padding:0!important;}
 	.col-6{
 		width:100%!important; 
 		margin:0;
 	}
+	.mainTagLine{
+		padding:0 1em 1em 1em!important;
+	}
+	.mainTagLine h1{
+		font-size: 3em!important;
+		line-height: 1em;}
+	.mainTagLine h2{
+		font-size: 1.5em!important;
+		padding-top: .3em;}
 }
 
 
