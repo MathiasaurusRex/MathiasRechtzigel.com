@@ -92,8 +92,6 @@ Site Colors
 
 .extraPad{padding: 0 1em; /* gives the row's decent paddings on smaller screens.*/}
 
-/* Body */
-
 .siteContainer{
 	padding: 1em 0;}
 
@@ -179,21 +177,23 @@ section ul li{
 	display:inline-block;
 	padding:1em .5em}
 
-.social img{height:3.125em;height:3.125em;}
-.social li a {
+.social img{height:3.125em;width:3.125em;}
+.social li img{
 	opacity:1;
 	clear:both;
-	-webkit-transition: opacity .5s;
-	-moz-transition: opacity .5s;
-	-o-transition: opacity .5s;
-	transition: opacity .5s;
+	-webkit-transition: all .5s ease-in-out;
+	-moz-transition: all .5s ease-in-out;
+	-o-transition: all .5s ease-in-out;
+	transition: all .5s ease-in-out;
 }
 
-.social li a:hover{
-	opacity: .5;
-	-webkit-transition: opacity .5s;
-	-moz-transition: opacity .5s;
-	-o-transition: opacity .5s;
-	transition: opacity .5s;}
+.social li img:hover{
+	opacity: .8;
+	-webkit-transform: rotate(5deg);
+	-moz-transform: rotate(5deg);
+	-ms-transform: rotate(5deg);
+	-o-transform: rotate(5deg);
+	transform: rotate(5deg);
+}
 
 
