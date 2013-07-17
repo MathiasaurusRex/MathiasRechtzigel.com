@@ -133,9 +133,10 @@ a:hover{
 .avatarContainer{padding: 1em 0;}
 .profilePicture{
 	margin:0 auto;
-	background-image: url(../image/markup.png);
 	width: 190px;
 	height: 190px;
+	-webkit-border-radius: 110px; 
+	-moz-border-radius:110px;
 	border-radius: 110px;
 	border: 5px solid white;
 	overflow:hidden;
@@ -143,7 +144,11 @@ a:hover{
 
 .profilePicture img{
 	width:190px;
-	height:190px;}
+	height:190px;
+	-webkit-border-radius: 110px; 
+	-moz-border-radius:110px;
+	border-radius: 110px;
+}
 
 .divide{height:1px;width:400px;
 }
@@ -196,4 +201,48 @@ section ul li{
 	transform: rotate(5deg);
 }
 
+
+/* Image Flipper */
+
+/* entire container, keeps perspective */
+.flip-container {
+  	-webkit-perspective:1000;
+	perspective: 1000;
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back {
+	width: 190px;
+	height: 190px;
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+  	-webkit-transform-style:preserve-3d;
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+}
+.backgroundFlip{
+	z-index:0;
+}
 

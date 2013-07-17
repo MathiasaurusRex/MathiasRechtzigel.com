@@ -25,9 +25,15 @@
         <div class="mainTagLine">
             <h1 class="row">Mathias Rechtzigel</h1>
             <h2 class="row">Web Developer &amp; Designer</h2>
-            <div class="row avatarContainer">
-                <div class="profilePicture">
-                    <img src="image/avatar.png" alt="Mathias Rechtzigel's Face"/>
+
+            <div class="flip-container profilePicture" ontouchstart="this.classList.toggle('hover');">
+                <div class="flipper">
+                    <div class="front">
+                        <img src="image/avatar.png" alt="Mathias Rechtzigel's Face"/>
+                    </div>
+                </div>
+                <div class="backgroundFlip">
+                        <img src="image/markup.png" alt="Some Markup"/>
                 </div>
             </div>
             <h2 class="row">Everything should be fun. The web in particular.</h2>
